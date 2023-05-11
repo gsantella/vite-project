@@ -44,7 +44,7 @@ socket.on("broadcastColorUpdate", (msg) => {
   document.querySelector('#log').innerHTML = msg
 
   const jsonData = JSON.parse(msg)
-  document.querySelector('body').style.backgroundColor = jsonData.color
+  document.querySelector('body').style.color = jsonData.color
 })
 
 socket.on("hello", (msg) => {
